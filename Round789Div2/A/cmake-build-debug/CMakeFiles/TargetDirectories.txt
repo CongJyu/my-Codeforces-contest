@@ -1,0 +1,3 @@
+/Users/rainchen/CodingSpace/my-Codeforces-contest/Round789Div2/A/cmake-build-debug/CMakeFiles/A.dir
+/Users/rainchen/CodingSpace/my-Codeforces-contest/Round789Div2/A/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/rainchen/CodingSpace/my-Codeforces-contest/Round789Div2/A/cmake-build-debug/CMakeFiles/rebuild_cache.dir

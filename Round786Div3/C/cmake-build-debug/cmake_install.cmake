@@ -1,4 +1,4 @@
-# Install script for directory: /Users/rainchen/CodingSpace/CodeForces/Round786/C
+# Install script for directory: /Users/rainchen/CodingSpace/my-Codeforces-contest/Round786Div3/C
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/Users/rainchen/CodingSpace/CodeForces/Round786/C/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/Users/rainchen/CodingSpace/my-Codeforces-contest/Round786Div3/C/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

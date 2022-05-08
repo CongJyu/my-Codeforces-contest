@@ -39,13 +39,13 @@ include CMakeFiles/rules.ninja
 #############################################
 # Logical path to working directory; prefix for absolute paths.
 
-cmake_ninja_workdir = /Users/rainchen/CodingSpace/CodeForces/Round786/C/cmake-build-debug/
+cmake_ninja_workdir = /Users/rainchen/CodingSpace/my-Codeforces-contest/Round786Div3/C/cmake-build-debug/
 
 #############################################
 # Utility command for rebuild_cache
 
 build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/rainchen/CodingSpace/CodeForces/Round786/C/cmake-build-debug && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S/Users/rainchen/CodingSpace/CodeForces/Round786/C -B/Users/rainchen/CodingSpace/CodeForces/Round786/C/cmake-build-debug
+  COMMAND = cd /Users/rainchen/CodingSpace/my-Codeforces-contest/Round786Div3/C/cmake-build-debug && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S/Users/rainchen/CodingSpace/my-Codeforces-contest/Round786Div3/C -B/Users/rainchen/CodingSpace/my-Codeforces-contest/Round786Div3/C/cmake-build-debug
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -57,7 +57,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 # Utility command for edit_cache
 
 build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/rainchen/CodingSpace/CodeForces/Round786/C/cmake-build-debug && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  COMMAND = cd /Users/rainchen/CodingSpace/my-Codeforces-contest/Round786Div3/C/cmake-build-debug && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -72,7 +72,7 @@ build edit_cache: phony CMakeFiles/edit_cache.util
 
 build cmake_object_order_depends_target_C: phony || CMakeFiles/C.dir
 
-build CMakeFiles/C.dir/main.cpp.o: CXX_COMPILER__C_Debug /Users/rainchen/CodingSpace/CodeForces/Round786/C/main.cpp || cmake_object_order_depends_target_C
+build CMakeFiles/C.dir/main.cpp.o: CXX_COMPILER__C_Debug /Users/rainchen/CodingSpace/my-Codeforces-contest/Round786Div3/C/main.cpp || cmake_object_order_depends_target_C
   DEP_FILE = CMakeFiles/C.dir/main.cpp.o.d
   FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -std=gnu++17
   OBJECT_DIR = CMakeFiles/C.dir
@@ -106,7 +106,7 @@ build C: CXX_EXECUTABLE_LINKER__C_Debug CMakeFiles/C.dir/main.cpp.o
 # =============================================================================
 
 #############################################
-# Folder: /Users/rainchen/CodingSpace/CodeForces/Round786/C/cmake-build-debug
+# Folder: /Users/rainchen/CodingSpace/my-Codeforces-contest/Round786Div3/C/cmake-build-debug
 
 build all: phony C
 
