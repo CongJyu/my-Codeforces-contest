@@ -12,7 +12,7 @@ int main() {
     while (n--) {
         string in;
         cin >> in;
-        
+        // code
     }
     return 0;
 }
