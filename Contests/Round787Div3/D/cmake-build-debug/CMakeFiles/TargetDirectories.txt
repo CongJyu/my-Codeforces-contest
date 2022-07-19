@@ -1,3 +1,0 @@
-/Users/rainchen/CodingSpace/my-Codeforces-contest/Round787Div3/D/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/Users/rainchen/CodingSpace/my-Codeforces-contest/Round787Div3/D/cmake-build-debug/CMakeFiles/edit_cache.dir
-/Users/rainchen/CodingSpace/my-Codeforces-contest/Round787Div3/D/cmake-build-debug/CMakeFiles/D.dir
