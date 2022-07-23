@@ -1,35 +1,39 @@
 // codeforces 1709b
 
 #include <iostream>
-#include <cstdio>
+#include <vector>
 
 using namespace std;
 
 int main() {
+    ios::sync_with_stdio(false);
     int n{}, m{};
-    scanf("%d %d", &n, &m);
+    cin >> n >> m;
     long long *a{new long long[n]};
     for (int i{}; i < n; ++i) {
-        scanf("%lld", &a[i]);
+        cin >> a[i];
+    }
+    vector<long long> left, right;
+    left.push_back(a[0]);
+    for (int i{}; i < n; ++i) {
+        left.push_back(max(0, (int) (a[i] - a[i + 1])));
+    }
+    right.push_back(a[0]);
+    for (int i{1}; i <= n - 1; ++i) {
+        right.push_back(max(0, (int) (a[i] - a[i - 1])));
+    }
+    for (int i{}; i < n - 1; ++i) {
+        left[i + 1] += left[i];
+        right[i + 1] += right[i];
     }
     while (m--) {
-        long long s{}, t{};
-        scanf("%lld %lld", &s, &t);
-        long long fall{};
-        if (s > t) {
-            for (long long j{s - 1}; j > t - 1; --j) {
-                if (a[j] > a[j - 1]) {
-                    fall += a[j] - a[j - 1];
-                }
-            }
+        int s{}, t{};
+        cin >> s >> t;
+        if (s < t) {
+            cout << left[t - 1] - left[s - 1] << endl;
         } else {
-            for (long long j{s}; j <= t - 1; ++j) {
-                if (a[j] < a[j - 1]) {
-                    fall += a[j - 1] - a[j];
-                }
-            }
+            cout << right[s - 1] - right[t - 1] << endl;
         }
-        printf("%lld\n", fall);
     }
     delete[] a;
     return 0;
