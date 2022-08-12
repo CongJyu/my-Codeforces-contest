@@ -5,12 +5,12 @@
 using namespace std;
 
 void solution() {
-    int x{}, y{}, a{}, b{};
+    unsigned long long x{}, y{}, a{}, b{};
     cin >> x >> y;
     cin >> a >> b;
     b = min(b, a * 2);
     if (x < y) {
-        int tmp{y};
+        unsigned long long tmp{y};
         y = x;
         x = tmp;
     }
