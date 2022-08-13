@@ -1,5 +1,4 @@
 // codeforces 1712c
-// wrong answer
 
 #include <iostream>
 #include <algorithm>
@@ -19,13 +18,25 @@ void solution() {
         cout << 0 << endl;
     } else {
         int repeat{};
+        bool is_increase{true};
+        for (int i{1}; i < n; ++i) {
+            if (a[i - 1] > a[i]) {
+                is_increase = false;
+            }
+        }
         for (int i{1}; i < n - 1; ++i) {
             if (cp[i - 1] == cp[i]) {
                 clog << "REPEAT: " << cp[i] << endl;
                 repeat++;
+                clog << "REPEAT = " << repeat << endl;
             }
         }
-        cout << n - 1 - repeat << endl;
+        clog << "INCREASE: " << is_increase << endl;
+        if (is_increase) {
+            cout << 0 << endl;
+        } else {
+            cout << n - 1 - repeat << endl;
+        }
     }
     delete[] a;
     delete[] cp;
