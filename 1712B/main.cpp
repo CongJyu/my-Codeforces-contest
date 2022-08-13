@@ -1,5 +1,4 @@
 // codeforces 1712b
-// wrong answer
 
 #include <iostream>
 
@@ -10,12 +9,20 @@ void solution() {
     cin >> n;
     for (int i{}; i < n; ++i) {
         if (n % 2 == 0) {
-            cout << n - i << " ";
+            if ((i + 1) % 2 == 0) {
+                cout << i << " ";
+            } else {
+                cout << i + 2 << " ";
+            }
         } else {
             if (i == 0) {
                 cout << 1 << " ";
             } else {
-                cout << n - i + 1 << " ";
+                if ((i + 1) % 2 == 0) {
+                    cout << i + 2 << " ";
+                } else {
+                    cout << i << " ";
+                }
             }
         }
     }
