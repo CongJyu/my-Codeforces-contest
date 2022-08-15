@@ -1,0 +1,14 @@
+// codeforces 268a
+// no idea
+
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    ios::sync_with_stdio(false);
+    int n{};
+    cin >> n;
+
+    return 0;
+}
