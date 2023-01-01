@@ -2,41 +2,26 @@
 
 #include <iostream>
 #include <algorithm>
+#include <vector>
 
 using namespace std;
-
-bool cmp(int x, int y) {
-    return x > y;
-}
 
 void solution() {
     int n{}, m{};
     cin >> n >> m;
-    long long *a{new long long[n]}, *b{new long long[m]};
-    for (int i{}; i < n; ++i) {
-        cin >> a[i];
+    vector<long long> a;
+    for (int i{}; i < n + m; ++i) {
+        int temp{};
+        cin >> temp;
+        a.push_back(temp);
     }
-    for (int i{}; i < m; ++i) {
-        cin >> b[i];
-    }
-    sort(a, a + n);
-    sort(b, b + m, cmp);
-    if (m >= n) {
-        for (int i{}; i < n; ++i) {
-            a[i] = b[i];
-        }
-    } else {
-        for (int i{}; i < m; ++i) {
-            a[i] = b[i];
-        }
-    }
+    sort(a.begin(), a.end() - 1);
+    reverse(a.begin(), a.end());
     long long result{};
     for (int i{}; i < n; ++i) {
-        result += a[i];
+        result += a.at(i);
     }
     cout << result << endl;
-    delete[] a;
-    delete[] b;
 }
 
 int main() {
