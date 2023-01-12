@@ -1,3 +1,0 @@
-/Users/rainchen/CodingArea/my-Codeforces-contest/1154A/cmake-build-debug/CMakeFiles/1154A.dir
-/Users/rainchen/CodingArea/my-Codeforces-contest/1154A/cmake-build-debug/CMakeFiles/edit_cache.dir
-/Users/rainchen/CodingArea/my-Codeforces-contest/1154A/cmake-build-debug/CMakeFiles/rebuild_cache.dir
